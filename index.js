@@ -37,7 +37,7 @@ app.all('/*', function(req, res, next) {
 })
 
 app.get("/", async function (req, res) {
-  res.redirect('https://www.rpwz-api.ga')
+  res.redirect('https://www.apimau.ga')
 })
 
 app.get('/igs', (req, res) => {
@@ -338,7 +338,7 @@ app.get('/wpusers', (req, res) => {
 })
 
 app.get('*', function(req, res){
-    res.redirect('https://www.rpwz-api.ga')
+    res.redirect('https://www.apimau.ga')
 })
 
 app.listen(PORT, () => {
