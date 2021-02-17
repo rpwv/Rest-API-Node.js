@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express()
-const PORT = process.env.PORT || 3000
+//const PORT = process.env.PORT || 3000
 const bodyParser = require('body-parser')
-const logger = require('morgan')
-const cookieParser = require('cookie-parser')
+//const logger = require('morgan')
+//const cookieParser = require('cookie-parser')
 const ytdl = require('ytdl-core')
 const {
 	IGStalk,
@@ -23,18 +23,18 @@ const {
   WPUser
 } = require('./lib')
 
-app.use(logger('dev'))
-app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
-app.use(cookieParser())
-app.use(bodyParser.json())
-app.set('json spaces', 4)
+//app.use(logger('dev'))
+//app.use(express.json())
+//app.use(express.urlencoded({ extended: false }))
+//app.use(cookieParser())
+//app.use(bodyParser.json())
+//app.set('json spaces', 4)
 
-app.all('/*', function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*")
-  res.header("Access-Control-Allow-Headers", "X-Requested-With")
-  next()
-})
+//app.all('/*', function(req, res, next) {
+//  res.header("Access-Control-Allow-Origin", "*")
+//  res.header("Access-Control-Allow-Headers", "X-Requested-With")
+//  next()
+//})
 
 app.get("/", async function (req, res) {
   res.redirect('https://www.apimau.ga')
