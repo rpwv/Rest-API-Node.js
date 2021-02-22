@@ -338,7 +338,7 @@ app.get('/wpusers', (req, res) => {
 })
 
 app.get('*', function(req, res){
-    res.redirect('https://www.rpwz-api.herokuapp.com')
+    res.redirect('https://rpwz-api.herokuapp.com')
 })
 
 app.listen(PORT, () => {
