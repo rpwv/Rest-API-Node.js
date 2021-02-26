@@ -343,6 +343,6 @@ app.get('*', function(req, res){
 
 app.listen(process.env.PORT);
 setInterval(() =>{
-http.get(`http://{process.env.PROJECT_DOMAIN}.herokuapp.com`)
+http.get(`http://rpwzu.herokuapp.com/`)
 }, 10000)
 
