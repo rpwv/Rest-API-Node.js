@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const PORT = 'https://rpwzu.herokuapp.com'
 const bodyParser = require('body-parser')
 const logger = require('morgan')
 const cookieParser = require('cookie-parser')
@@ -341,6 +340,8 @@ app.get('*', function(req, res){
     res.redirect('https://rpwz-api.herokuapp.com')
 })
 
-app.listen(PORT, () => {
-  console.log(`server running on port ${PORT}`)
-})
+app.listen(process.env.PORT);
+setInterval(() =>{
+http.get(`http://{process.env.PROJECT_DOMAIN}.herokuapp.com`)
+}, 10000)
+
