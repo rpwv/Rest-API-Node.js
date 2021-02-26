@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const PORT = process.env.PORT || 3000
+const PORT = 'https://rpwzu.herokuapp.com'
 const bodyParser = require('body-parser')
 const logger = require('morgan')
 const cookieParser = require('cookie-parser')
