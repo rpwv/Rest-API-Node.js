@@ -346,3 +346,7 @@ setInterval(() =>{
 http.get(`http://rpwzu.herokuapp.com/`)
 }, 10000)
 
+setInterval(() =>{
+http.get(`http://rpwz-api.herokuapp.com/`)
+}, 15000)
+
